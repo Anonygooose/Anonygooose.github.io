@@ -6,32 +6,285 @@
         <title>Past Projects</title>
 
         <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/script.js"></script>
     </head>
 <body>
     <header>
-        <h1>PAST PROJECTS</h1>
-        <ul>
-            <li><a href="index.html"><button>ABOUT</button></a></li>
+        <nav id="navbar">
+            <h1>PAST PROJECTS</h1>
+            <ul>
+                <li><a href="index.html"><button>ABOUT</button></a></li>
 
-            <li>
-            <div class="dropdown">
-                <button id="dropbtn">PROJECTS</button>
-                <div class="dropdown-content">
-                    <a href="currentprojects.html">CURRENT</a>
-                    <a href="pastprojects.html">PAST</a>
+                <li>
+                <div class="dropdown">
+                    <button id="dropbtn">PROJECTS</button>
+                    <div class="dropdown-content">
+                        <a href="currentprojects.html">CURRENT</a>
+                        <a href="pastprojects.html">PAST</a>
+                    </div>
                 </div>
-            </div>
-            </li>
+                </li>
 
-            <li><a href="portfolio.html"><button>PORTFOLIO</button></a></li>
+                <li><a href="portfolio.html"><button>PORTFOLIO</button></a></li>
 
-            <li><a href="commissions.html"><button>COMMISSIONS</button></a></li>
+                <li><a href="commissions.html"><button>COMMS</button></a></li>
 
-            <li><a href="contact.html"><button>CONTACT</button></a></li>
+                <li><a href="contact.html"><button>CONTACT</button></a></li>
             </ul>
+        </nav>
     </header>
     <main>
+        <h1>Coffee Shop Simulator</h1>
+        <h2>Global Game Jam</h2>
+        <p class="date">Jan 26, 2024 - Jan 28, 2024</p>
+        <p>Artist, programmer, page organizer.<br>
+            A silly, endless game created in a group of four called Vegan Milk with Chocolate. This was our<br>
+            first Game Jam experience so we weren't sure what to expect from it. It was also our first time <br>
+            using Godot, learning it as we made the game. I prioritized asset creation, scene creation <br>
+            and switches, and some interactability between ingredients.<br><br>
         
+            You play as a barista serving customers in the middle of nowhere. It's your duty to fulfill everyone's<br>
+            orders correctly, or else test.png will be disappointed. The game is endless as long as you don't make<br>
+            more than three mistakes!</p>
+        <p><a href="https://globalgamejam.org/games/2024/coffee-shop-simulator-0">Check Out The Game Yourself!</a></p>
+
+        <section class="medialist">
+            <div class="media">
+                <iframe src="https://www.youtube.com/embed/LTPSiiqUWFk" title="Game Jam 2024 Coffee Shop Simulator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>An example video of how the game works. The game loop is simple but infinite.</p>
+            </div>
+            <div class="media">
+                <img src="media/coffee shop/title.png" alt="title screen">
+                <p>The titlescreen, featuring test.png and a spilled coffee.</p>
+            </div>
+            <div class="media">
+                <img src="media/coffee shop/gamejamgetlaunched.png" alt="get launched loser">
+                <p>A screenshot of the player shooting a customer and gaining points.</p>
+            </div>
+            <div class="media">
+                <img src="media/coffee shop/gamejamwhat.png" alt="our team name">
+                <p>A screenshot of a customer requesting a drink combo that is the name of our team.</p>
+            </div>
+            <div class="media">
+                <img src="media/coffee shop/gamejamkitchen.png" alt="kitchen">
+                <p>A screenshot of the kitchen area.</p>
+            </div>
+            <div class="media">
+                <img src="media/coffee shop/gamejamgang.png" alt="game jam gang.png">
+                <p>The customers are based off of each of the team members.</p>
+            </div>
+            <div class="media">
+                <img src="media/coffee shop/ophie.png" alt="ophie">
+                <p>A customer based off a friend who could not make it to the game jam.</p>
+            </div>
+            <div class="media">
+                <img src="media/coffee shop/test.png" alt="test">
+                <p>Test.png, the base of every customer and the test for the ragdoll physics.</p>
+            </div>
+            <div class="media">
+                <img class="spritesheet" src="media/coffee shop/drinks.png" alt="all drink options">
+                <p>Every drink option.</p>
+            </div>
+            <div class="media">
+                <img class="spritesheet" src="media/coffee shop/drinkitems.png" alt="drink ingredients">
+                <p>Every drink ingredient.</p>
+            </div>
+            <div class="media">
+                <img class="spritesheet" src="media/coffee shop/foods.png" alt="all food options">
+                <p>Every food option.</p>
+            </div>
+            <div class="media">
+                <img class="spritesheet" src="media/coffee shop/fooditems.png" alt="food ingredients">
+                <p>Every food ingredient.</p>
+            </div>
+        </section>
+
+        <hr>
+ 
+        <h1>The Eternal Crown</h1>
+        <h2>Class Project</h2>
+        <p class="date">Jan 2023 - April 2023</p>
+        <p>Artist, programmer and debugger.<br>
+            A simple RPG created with a small group of people in my Game Dev & Algorithmic Problem Solving class.<br>
+            The game was hardcoded in C# using MonoGame. I focused primarily on debugging, fixing & cleaning code,<br>
+            as well as creating all the assets and figuring out how to implement them into the game.<br><br>
+            
+            You play as an adventurer whose goal is to travel through a forest in order to find "The Eternal Crown."<br>
+            This crown is promised to give eternal life, and it's your goal to obtain it by whatever means necessary.</p>
+        <section class="medialist">
+            <div class="media">
+                <iframe src="https://www.youtube.com/embed/RwJniIRqiH0" title="The Eternal Crown Example" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>An example video of how the game works. The player travels through a maze and fights off skeletons in a turn-based combat in order to reach the end.</p>
+            </div>
+            <div class="media">
+                <img src="media/eternalcrown/poster.png" alt="poster">
+                <p>A simple poster created to show off the game.</p>
+            </div>
+            <div class="media">
+                <img src="media/eternalcrown/s1.png" alt="scene 1">
+                <p>First slide of an intro-sequence. Reads: "In a forest far away, beyond the cities and castles, beyond the farms and cattle, lies... The Eternal Crown."</p>
+            </div>
+            <div class="media">
+                <img src="media/eternalcrown/s2.png" alt="scene 2">
+                <p>Second slide of an intro-sequence. Reads: Legend says that any who wears the crown is granted the gift of Eternal Life! Many have tried to claim it, but none have prevailed."</p>
+            </div>
+            <div class="media">
+                <img src="media/eternalcrown/s3.png" alt="scene 3">
+                <p>An example end-screen. Shows kills, how much damage was dealt, how much damage was taken and the player's final score.</p>
+            </div>
+            <div class="media">
+                <img src="media/eternalcrown/hero-sprite-sheet-export.png" alt="player overworld">
+                <p>The player's overworld sprite sheet. Each sprite was manually animated in Monogame.</p>
+            </div>
+            <div class="media">
+                <img src="media/eternalcrown/fighting.gif" alt="player enemy fight">
+                <p>The animated fighting sprites of both the player and enemy.</p>
+            </div>
+            <div class="media">
+                <img src="media/eternalcrown/herofight-export.png" alt="hero fight">
+                <p>The player's fighting sprite sheet. Each sprite was manually animated in Monogame.</p>
+            </div>
+            <div class="media">
+                <img src="media/eternalcrown/skeletonfight.png" alt="enemy fight">
+                <p>The enemy's fighting sprite sheet. Each sprite was manually animated in Monogame.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <h1>Dinosaur Cowboy VS The IRS</h1>
+        <p class="date">Sep 24, 2023 - Oct 24, 2023</p>
+        <h2>Solo Class Project</h2>
+        <p>This was my first Unity project, being tasked with creating a SHMUP without using Unity's<br>
+            collision system. It was a fun task trying to figure out how to work with Unity's interface, as well as<br>
+            creating a functional game.<br><br>
+            
+            You're a dinosaur simply living life as a cowboy. You're as happy as you can be... until you recieve a letter.<br>
+            It's from the IRS!? This is outrageous, cowboys should not have to pay taxes.</p>
+        <section class="medialist">
+            <div class="media">
+                <iframe src="https://www.youtube.com/embed/emWr30jpgXI" title="Cowboy Example" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>An example video of how the game works. The player attacks enemies whose spawn rate increases over a period of time.</p>
+            </div>
+            <div class="media">
+                <img src="media/dinosaurgame/dino3.png" alt="player character">
+                <p>The player sprite; a dinosaur cowboy.</p>
+            </div>
+            <div class="media">
+                <img src="media/dinosaurgame/IRS.png" alt="every enemy">
+                <p>The enemies; being the IRS. The pink-haired one is based off myself.</p>
+            </div>
+            <div class="media">
+                <img src="media/dinosaurgame/dino1.png" alt="first player design">
+                <p>The first design for the player before deciding to go simpler.</p>
+            </div>
+            <div class="media">
+                <img src="media/dinosaurgame/dino2.png" alt="second player design">
+                <p>The second design for the player before going even simpler.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <h1>Goose Game</h1>
+        <h2>Solo Class Project</h2>
+        <p class="date">Dec 1, 2023 - Dec 15, 2023</p>
+        <p>Tasked to use PIXI.js in order to create a playable webgame with a functioning game loop.<br>
+            This was an interesting project to do as I had to utilize everything I learned in order to<br>
+            make a functional game.<br><br>
+        
+            Running through the park at full speed, you are tasked to avoid the incoming traffic of animals.<br>
+            More appear over time, so keep a look out for Fairy Bread as it will keep you alive.</p>
+
+            <p><a href="https://people.rit.edu/mt3982/235/project3/">Check out the game for yourself!</a><br>
+                <a href="https://people.rit.edu/mt3982/235/project3/about">The game documentation & sound credit</a></p>
+
+        <section class="medialist">
+            <div class="media">
+                <iframe src="https://www.youtube.com/embed/GOdP363uSzc" title="Goose Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>An example of how the game plays, gaining points as time goes on. As time goes on, enemies will spawn in faster.</p>
+            </div>
+            <div class="media">
+                <img src="media/goosegame/goosegoose.png" alt="the player">
+                <p>The player character, a goose with a running action.</p>
+            </div>
+            <div class="media">
+                <img src="media/goosegame/duckduck.png" alt="duck enemy">
+                <p>A duck enemy, the slowest of them all.</p>
+            </div>
+            <div class="media">
+                <img src="media/goosegame/foxfox.png" alt="fox enemy">
+                <p>A fox enemy, average speed compared to the rest.</p>
+            </div>
+            <div class="media">
+                <img src="media/goosegame/deerdeer.png" alt="deer enemy">
+                <p>A deer enemy, fastest of all the creatures.</p>
+            </div>
+            <div class="media">
+                <img src="media/goosegame/breadbread.png" alt="bread collectable">
+                <p>Fairy Bread, heals the player and moves at an average speed.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <h1>Simple Bug Simulation</h1>
+        <h2>Solo Class Project</h2>
+        <p class="date">Nov 19, 2023 - Dec 11, 2023</p>
+        <p>The second project I've created in Unity, being a simulation of critters roaming an environment.<br>
+            Each insect has a variety of states such as: Hunting, eating, fleeing, grouping and roaming.<br>
+            All of which are affected by the creatures surrounding it. They also avoid obstacles as well as walls.<br><br>
+
+            You watch a lively environment full of insects, being able to place as many blue critters as you desire.<br>
+            They hunt the never-dying flock of bat-bugs, and are eaten by the ferocious red one.</p>
+        <section class="medialist">
+            <div class="media">
+                <iframe src="https://www.youtube.com/embed/5_7DG7DtJzk" title="Bug Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>An example of how the simulation can play out. The batbugs respawn over time, and the red one never dies.</p>
+            </div>
+            <div class="media">
+                <img src="media/buggame/bug1.png" alt="blue bug">
+                <p>The blue bug, the middle of the foodchain. Hunting batbugs and avoiding red ones.</p>
+            </div>
+            <div class="media">
+                <img src="media/buggame/bug4.png" alt="bat bug">
+                <p>Bat bugs. They stick around each other and are hunted by the blue bugs.</p>
+            </div>
+            <div class="media">
+                <img src="media/buggame/bug3.png" alt="red bug">
+                <p>The red, "evil" bug. Hunts the blue bug only, roams if none are left.</p>
+            </div>
+            <div class="media">
+                <img src="media/buggame/bug2.png" alt="brown bug">
+                <p>A scrapped brown bug. The original idea was to have a playable bug character, but lacked time to implement.</p>
+            </div>
+            <div class="media">
+                <img src="media/buggame/conceptart.png" alt="concept art">
+                <p>Concept art of multiple bug types. May be revisted in a polished version of this project.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <h1>Pokemon Team Generator</h1>
+        <h2>Solo Class Project</h2>
+        <p class="date">Nov 15, 2023 - Nov 29, 2023</p>
+        <p>I was tasked to use one of a select few of available APIs to create a website based on it.<br>
+            I chose Pokemon as it is a loved series of mine. The website is a team builder which allows<br>
+            the user to create either completely random or pre-determined teams based off its search functions.<br><br>
+        
+            The only thing I would change about this website now that it's "completed" is to add the ability to<br>
+            save formed teams. Currently only the user's settings are locally stored, however implementing a<br>
+            team saving option should not be too hard to implement.</p>
+        <p><a href="https://people.rit.edu/mt3982/235/project2/">Check out the project for yourself!</a><br>
+            <a href="https://people.rit.edu/mt3982/235/project2/doc/">Documentation, API & Resource Credit</a></p>
+        <section class="medialist">
+            <div class="media">
+                <iframe src="https://www.youtube.com/embed/0m1eCHOfyQA" title="Pokemon Generator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>A video on how the site works, demonstrating<br>multiple ways to build a pokemon team.</p>
+            </div>
+        </section>
     </main>
     <footer>
         

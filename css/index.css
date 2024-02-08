@@ -1,0 +1,97 @@
+main h1, main p 
+{
+    margin: 30px 50px 30px 0;
+}
+main h1, main h2, .date
+{
+    color: #fcffca;
+    text-decoration: dotted underline 3px #fcffca;
+    text-underline-offset: 10px;
+}
+main h1
+{
+    margin-top: 3rem;
+}
+
+section.medialist
+{
+    display:flex;
+            flex-direction:row;
+            width:90vw;
+            overflow-x:auto;
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+}
+
+div.media {
+    text-align: center;
+
+    margin: 0 1px;
+
+    border: 2px solid #FF0096; 
+}
+
+.spritesheet {
+    background-color: #bababa;
+}
+
+div img, video {
+    height: 300px;
+    margin: 0 5px;
+    color: transparent;
+}
+
+section p {
+    margin: 1rem;
+    margin-bottom: 2vw;
+    font-size: large;
+}
+
+iframe {
+    width: 533px;
+    height: 300px;
+    margin: 0 5px;
+    color: transparent;
+}
+
+hr {
+    border-color: transparent;
+}
+
+.medialist::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+.medialist::-webkit-scrollbar-thumb {
+    background: #00D6FF;
+    border-radius: 5px;
+  }
+
+.medialist::-webkit-scrollbar-thumb:hover {
+    background: #F3FF00;
+    border-radius: 5px;
+    }
+
+.medialist::-webkit-scrollbar-thumb:active {
+    background: #F3FF00;
+    border-radius: 5px;
+    }
+
+
+.medialist::-webkit-scrollbar-button {
+    background-color: #FF0096;
+    border-radius: 5px;
+  }
+  
+  .medialist::-webkit-scrollbar-button:hover {
+    background-color: #F3FF00;
+  }
+
+a:link { color: #a1efff; }
+a:visited { color:#a1efff; }
+a:focus { color:#a1efff; }
+a:hover { color:#f9ff83; }
+a:active { color:#ffa3df; }
