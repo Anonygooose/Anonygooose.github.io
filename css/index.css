@@ -16,13 +16,13 @@ main h1
 section.medialist
 {
     display:flex;
-            flex-direction:row;
-            width:90vw;
-            overflow-x:auto;
+    flex-direction:row;
+    width:90vw;
+    overflow-x:auto;
 
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
 }
 
 div.media {
@@ -38,7 +38,7 @@ div.media {
 }
 
 div img, video {
-    height: 300px;
+    max-height: 300px;
     margin: 0 5px;
     color: transparent;
 }
@@ -90,8 +90,8 @@ hr {
     background-color: #F3FF00;
   }
 
-a:link { color: #a1efff; }
-a:visited { color:#a1efff; }
-a:focus { color:#a1efff; }
-a:hover { color:#f9ff83; }
-a:active { color:#ffa3df; }
+main a:link { color: #a1efff; }
+main a:visited { color:#a1efff; }
+main a:focus { color:#a1efff; }
+main a:hover { color:#f9ff83; }
+main a:active { color:#ffa3df; }

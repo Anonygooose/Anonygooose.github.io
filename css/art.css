@@ -1,0 +1,22 @@
+.grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    justify-content: center;
+
+    column-gap: 3rem;
+
+    padding: 0 5rem 0;
+
+    max-width: 80vw;
+}
+
+#willwont {
+    grid-template-areas: 
+    "will wont"
+}
+
+#will { grid-area: will; }
+#wont { grid-area: wont; }
