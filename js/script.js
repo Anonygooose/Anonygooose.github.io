@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
 
-    // CODE TAKEN FROM https://dev.to/areeburrub/hide-navbar-as-scroll-down-in-less-than-10-lines-of-javascript-1i00
+    // NAVBAR CODE TAKEN FROM https://dev.to/areeburrub/hide-navbar-as-scroll-down-in-less-than-10-lines-of-javascript-1i00
 
     var lastScrollTop; // This Varibale will store the top position
 
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         //This line will get the location on scroll
         
         if(scrollTop > lastScrollTop){ //if it will be greater than the previous
-            navbar.style.top='-210px';
+            navbar.style.top='-250px';
             //set the value to the negetive of height of navbar 
         }
         
