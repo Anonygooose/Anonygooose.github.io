@@ -102,3 +102,7 @@ main a:visited { color:#a1efff; }
 main a:focus { color:#a1efff; }
 main a:hover { color:#ff6fc3; }
 main a:active { color:#ffa3df; }
+
+iframe {
+    border: 0;
+}
