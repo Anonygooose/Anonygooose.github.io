@@ -1,0 +1,17 @@
+.linktree, .linkedin, .email, img
+{
+    height: 20px;
+    width: 20px;
+
+    margin-left: 20px;
+}
+
+.footerInfo
+{
+    background-color: var(--dark-gray);
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-items: start;
+}

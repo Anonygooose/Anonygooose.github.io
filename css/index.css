@@ -4,45 +4,48 @@
     --blue:#9ac0f6;
     --pink:#f084c5;
     --purple:#bf9beb;
-    --yellow:#e7dc93;
+    --yellow:#f6d896;
     --black: #000000;
     --dark-gray:#13151E;
     --gray: #262A3C;
     --white:#FEFFDD;
 }
 
-.blue
+.blue, .blue:visited, .blue:link
 {
     color: var(--blue);
+    font-weight: lighter;
 }
 
-.pink
+.pink, .pink:visited, .pink:link
 {
     color: var(--pink);
+    font-weight: lighter;
 }
 
-.yellow
+.yellow, .yellow:visited, .yellow:link
 {
     color: var(--yellow);
+    font-weight: lighter;
 }
 
-.purple
+.purple, .purple:visited, .purple:link
 {
     color: var(--purple);
+    font-weight: lighter;
 }
 
 /* BACKGROUND */
-
 body
 {
-    background: url(../media/background_gif3.gif);
+    background: url(../media/background.gif);
 
     background-repeat: repeat;
     background-size: fit;
 
     width: 100vw;
     height: auto;
-    min-height: 100vh;
+    min-height: 100%;
 
     margin: 0;
 
@@ -53,10 +56,18 @@ body
     font-family: Dosis;
 }
 
+/* GENERAL STYLING */
 h1, h2, h3
 {
     font-family: Patua One;
     font-weight: normal;
+}
+
+/* LINKS */
+a
+{
+    text-decoration: underline solid 1px;
+    text-underline-offset: 2px;
 }
 
 #home .home:link,#home .home:visited { color: var(--purple);}
@@ -67,13 +78,13 @@ h1, h2, h3
 
 a:link { color: var(--white);}
 a:visited { color: var(--white); }
-a:focus { color: var(--purple);  }
-a:hover { color: var(--pink); }
-a:active { color: var(--purple); }
+p a:focus, a:focus { color: var(--purple);  }
+p a:hover, a:hover { color: var(--pink); }
+p a:active, a:active { color: var(--purple); }
 
 
-
-#about
+/* MAIN */
+.main-footer
 {
     background-color: var(--gray);
     border: 3px solid black;
@@ -83,6 +94,66 @@ a:active { color: var(--purple); }
     height: auto;
 
     margin: 100px auto 0;
-
-    padding: 5px 20px;
 }
+
+main
+{
+    margin: 5px 20px;
+}
+
+/* ABOUT */
+#about 
+{
+    width: 90%;
+
+    margin: 0 auto;
+}
+
+#about p 
+{
+    text-align: justify;
+}
+
+#about img
+{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* [xs] Extra small devices, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* [sm] Small devices, 576px and up */
+@media (min-width: 576px) {}
+
+/* [md] Medium devices, 768px and up */
+@media (min-width: 768px) {
+        
+    #about img
+    {
+        height: 250px;
+        max-height: 20%;
+        width: auto;
+        object-fit: cover;
+
+        float: right;
+
+        margin: 0 20px;
+
+        border: solid 3px black;
+        box-shadow: 0 2px 5px var(--black);
+    }
+}
+
+/* [lg] Large desktops, 992px and up */
+@media (min-width: 992px) {
+
+}
+
+/* [xl] Extra large devices 1200px and up */
+@media (min-width: 1200px) {}
+
+/* [xxl] Extra extra large devices, 1400px and up */
+@media (min-width: 1400px) {}
