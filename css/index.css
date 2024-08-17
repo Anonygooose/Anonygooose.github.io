@@ -5,34 +5,48 @@
     --pink:#f084c5;
     --purple:#bf9beb;
     --yellow:#f6d896;
-    --black: #000000;
+    --black: #0a0b11;
     --dark-gray:#13151E;
     --gray: #262A3C;
+    --light-gray: #494d5e;
     --white:#FEFFDD;
 }
 
-.blue, .blue:visited, .blue:link
+.blue, a.blue:visited, a.blue:link
 {
     color: var(--blue);
     font-weight: lighter;
 }
 
-.pink, .pink:visited, .pink:link
+.pink, a.pink:visited, a.pink:link
 {
     color: var(--pink);
     font-weight: lighter;
 }
 
-.yellow, .yellow:visited, .yellow:link
+.yellow, a.yellow:visited, a.yellow:link
 {
     color: var(--yellow);
     font-weight: lighter;
 }
 
-.purple, .purple:visited, .purple:link
+.purple, a.purple:visited, a.purple:link
 {
     color: var(--purple);
     font-weight: lighter;
+}
+
+a.blue:hover { color: var(--pink); }
+a.pink:hover { color: var(--yellow); }
+a.yellow:hover { color: var(--purple); }
+a.purple:hover { color: var(--blue); }
+
+a.blue:active, .blue:focus,
+a.pink:active, .pink:focus,
+a.yellow:active, .yellow:focus,
+a.purple:active, .purple:focus
+{
+    color: var(--white);
 }
 
 /* BACKGROUND */
@@ -63,6 +77,11 @@ h1, h2, h3
     font-weight: normal;
 }
 
+h1
+{
+    font-size: 2em;
+}
+
 /* LINKS */
 a
 {
@@ -87,40 +106,158 @@ p a:active, a:active { color: var(--purple); }
 .main-footer
 {
     background-color: var(--gray);
-    border: 3px solid black;
+    border: 3px solid var(--black);
     box-shadow: 0 2px 10px var(--black);
 
-    width: 70vw;
+    width: 85vw;
     height: auto;
 
-    margin: 100px auto 0;
-}
-
-main
-{
-    margin: 5px 20px;
+    margin: 100px auto 20px;
 }
 
 /* ABOUT */
-#about 
+#about, #projectInfo
 {
     width: 90%;
-
-    margin: 0 auto;
+    margin: 5px auto;
 }
 
-#about p 
-{
-    text-align: justify;
-}
-
-#about img
+#aboutimg
 {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
+/* PROJECTS */
+.project
+{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: solid 3px var(--dark-gray);
+}
+
+.project:last-of-type
+{
+    border-bottom: none;
+}
+
+.project h1
+{
+    margin-bottom: -10px;
+}
+
+.project p
+{
+    width: 90%;
+    margin: 20px auto 10px;
+
+    text-align: justify;
+}
+
+.project p:after 
+{
+    content:'';
+    display:inline-block;
+    width:100%;
+    vertical-align:top;
+}
+
+#tabs
+{
+    background-color: var(--dark-gray);
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    text-align: center;
+}
+
+#tabs a
+{
+    text-decoration: none;
+}
+
+.info
+{
+    text-align: center !important;
+}
+
+.info b
+{
+    font-weight: bold !important;
+}
+
+.images
+{
+    width: 95%;
+    height: 200px;
+
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    background-color: var(--black);
+    border: 2px solid var(--black);
+    border-left: 5px solid var(--black);
+    border-right: 5px solid var(--black);
+
+    box-shadow: 0 2px 10px var(--dark-gray);
+
+    margin-bottom: 30px;
+}
+
+.images img
+{
+    height: calc(100% - 10px);
+    margin: 5px 10px;
+
+    background-color: var(--dark-gray);
+}
+
+iframe
+{
+    width: 80%;
+    height: auto;
+    
+    aspect-ratio: 16 / 9;
+
+    border: 2px solid var(--black);
+    border-left: 5px solid var(--black);
+    border-right: 5px solid var(--black);
+
+    box-shadow: 0 2px 10px var(--dark-gray);
+
+    margin-bottom: 20px;
+}
+
+/* SCROLLBARS */
+.images::-webkit-scrollbar
+{
+    height: 0;
+    width: 0;
+    background-color: transparent;
+}
+
+.images::-webkit-scrollbar-thumb
+{
+    background-color: transparent;
+    border: none;
+
+    background-clip: content-box;
+}
+.images::-webkit-scrollbar-thumb:hover
+{
+    background-color: transparent;
+}
+
+.images::-webkit-scrollbar-thumb:active
+{
+    background-color: transparent;
+}
 
 /* [xs] Extra small devices, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
@@ -130,8 +267,15 @@ main
 
 /* [md] Medium devices, 768px and up */
 @media (min-width: 768px) {
-        
-    #about img
+    .main-footer
+    {
+        width: 70vw;
+        height: auto;
+
+        margin: 100px auto 30px;
+    }
+
+    #aboutimg
     {
         height: 250px;
         max-height: 20%;
@@ -142,14 +286,55 @@ main
 
         margin: 0 20px;
 
-        border: solid 3px black;
+        border: solid 3px var(--black);
         box-shadow: 0 2px 5px var(--black);
+    }
+
+    .images
+    {
+        width: 100%;
+        height: 300px;
+
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        margin-bottom: 30px;
+    }
+
+    /* SCROLLBARS */
+    .images::-webkit-scrollbar
+    {
+        width: 11px;
+        height: 15px;
+        background-color: var(--black);
+    }
+
+    .images::-webkit-scrollbar-thumb
+    {
+        background-color: var(--gray);
+        border: 2px solid transparent;
+
+        background-clip: content-box;
+    }
+    .images::-webkit-scrollbar-thumb:hover
+    {
+        background-color: var(--light-gray);
+    }
+
+    .images::-webkit-scrollbar-thumb:active
+    {
+        background-color: var(--dark-gray);
     }
 }
 
 /* [lg] Large desktops, 992px and up */
 @media (min-width: 992px) {
-
+    .project p
+    {
+        width: 50%;
+    }
 }
 
 /* [xl] Extra large devices 1200px and up */

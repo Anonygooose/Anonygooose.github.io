@@ -6,7 +6,5 @@ window.onload = function () {
     $(function(){
     $("#foot-placeholder").load("footer.html");
     });
-
-
 };
 

@@ -1,9 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="2 4 20 16">
-
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-
-<g id="SVGRepo_iconCarrier"> <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="#FEFFDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <rect x="3" y="5" width="18" height="14" rx="2" stroke="#FEFFDD" stroke-width="2" stroke-linecap="round"/> </g>
-
-</svg>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#FEFFDD">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <title>envelope-open</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-518.000000, -257.000000)" fill="#FEFFDD"> <path d="M534,280 L530.742,277.76 L520.323,288.621 C520.835,288.858 521.399,289 522,289 L546,289 C546.601,289 547.165,288.858 547.677,288.621 L537.258,277.76 L534,280 L534,280 Z M538.935,276.607 L549.29,287.27 C549.736,286.624 550,285.844 550,285 L550,268.317 L538.935,276.607 L538.935,276.607 Z M549.76,265.851 L534,257 L518.24,265.851 L534,277.656 L549.76,265.851 L549.76,265.851 Z M518,268 L518,285 C518,285.844 518.264,286.624 518.71,287.27 L529.066,276.607 L518,268 L518,268 Z" id="envelope-open" sketch:type="MSShapeGroup"> </path> </g> </g> </g>
+</svg>

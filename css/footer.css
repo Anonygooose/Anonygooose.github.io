@@ -1,9 +1,14 @@
-.linktree, .linkedin, .email, img
+.linktree, .linkedin, .email, .footimg
 {
     height: 20px;
     width: 20px;
 
     margin-left: 20px;
+}
+
+.email, .email .footimg
+{
+    width: 20px;
 }
 
 .footerInfo
