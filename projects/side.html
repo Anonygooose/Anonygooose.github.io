@@ -51,6 +51,7 @@
                                 - A sparkling background<br>
                                 - Full responsiveness<br>
                                 - Using jquery to set the navbar/footer on each page<br>
+                                - Using masonry on the <a class="pink" href="../portfolio.html">Portfolio page</a><br>
                                 - A color palette that's pleasing to look at<br>
                                 - Clarification of which page you are on via colors<br>
                                 - A better organized system of displaying all my talent<br>
@@ -70,17 +71,117 @@
                     <iframe width="1045" height="542" src="https://www.youtube.com/embed/LTPSiiqUWFk" title="Game Jam 2024 Coffee Shop Simulator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                     <section class="images">
-                        <img src="../media/coffeeshop/title.png" onclick="window.open('../media/coffeeshop/title.png', '_blank');">
-                        <img src="../media/coffeeshop/gamejamgetlaunched.png" onclick="window.open('../media/coffeeshop/gamejamgetlaunched.png', '_blank');">
-                        <img src="../media/coffeeshop/gamejamwhat.png" onclick="window.open('../media/coffeeshop/gamejamwhat.png', '_blank');">
-                        <img src="../media/coffeeshop/gamejamkitchen.png" onclick="window.open('../media/coffeeshop/gamejamkitchen.png', '_blank');">
-                        <img src="../media/coffeeshop/gamejamgang.png" onclick="window.open('../media/coffeeshop/gamejamgang.png', '_blank');">
-                        <img src="../media/coffeeshop/ophie.png" onclick="window.open('../media/coffeeshop/ophie.png', '_blank');">
-                        <img src="../media/coffeeshop/test.png" onclick="window.open('../media/coffeeshop/test.png', '_blank');">
-                        <img src="../media/coffeeshop/drinks.png" onclick="window.open('../media/coffeeshop/drinks.png', '_blank');">
-                        <img src="../media/coffeeshop/drinkitems.png" onclick="window.open('../media/coffeeshop/drinkitems.png', '_blank');">
-                        <img src="../media/coffeeshop/foods.png" onclick="window.open('../media/coffeeshop/foods.png', '_blank');">
-                        <img src="../media/coffeeshop/fooditems.png" onclick="window.open('../media/coffeeshop/fooditems.png', '_blank');">
+
+                    <div class="img-container" onclick="window.open('../media/coffeeshop/title.png', '_blank');">
+                        <img src="../media/coffeeshop/title.png" alt="">
+                        <div class="img-overlay">
+                            <div class="img-title">Title Screen</div>
+                            <p class="img-desc">
+                                Featuring test.png and the target within the ominous void.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="img-container" onclick="window.open('../media/coffeeshop/gamejamgetlaunched.png', '_blank');">
+                        <img src="../media/coffeeshop/gamejamgetlaunched.png" alt="">
+                        <div class="img-overlay">
+                            <div class="img-title">Get Launched!</div>
+                            <p class="img-desc">
+                                A screenshot of the player shooting a customer via the cannon.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="img-container" onclick="window.open('../media/coffeeshop/gamejamwhat.png', '_blank');">
+                        <img src="../media/coffeeshop/gamejamwhat.png" alt="">
+                        <div class="img-overlay">
+                            <div class="img-title">That's Our Name!</div>
+                            <p class="img-desc">
+                                A screenshot of a customer requesting a menu item, being our team name.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="img-container" onclick="window.open('../media/coffeeshop/gamejamkitchen.png', '_blank');">
+                        <img src="../media/coffeeshop/gamejamkitchen.png" alt="">
+                        <div class="img-overlay">
+                            <div class="img-title">Kitchen</div>
+                            <p class="img-desc">
+                                The kitchen where the player preps food.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="img-container" onclick="window.open('../media/coffeeshop/gamejamgang.png', '_blank');">
+                        <img src="../media/coffeeshop/gamejamgang.png" alt="">
+                        <div class="img-overlay">
+                            <div class="img-title">The Team</div>
+                            <p class="img-desc">
+                                4 of the customers each represent one of the teammates!
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="img-container" onclick="window.open('../media/coffeeshop/ophie.png', '_blank');">
+                        <img src="../media/coffeeshop/ophie.png" alt="">
+                        <div class="img-overlay">
+                            <div class="img-title">An Extra Customer</div>
+                            <p class="img-desc">
+                                A customer representing one of our friends that inspired some of the food items in game.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="img-container" onclick="window.open('../media/coffeeshop/test.png', '_blank');">
+                        <img src="../media/coffeeshop/test.png" alt="">
+                        <div class="img-overlay">
+                            <div class="img-title">test.png</div>
+                            <p class="img-desc">
+                                Make sure you don't upset him!
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="img-container" onclick="window.open('../media/coffeeshop/drinks.png', '_blank');">
+                        <img style="background-color: var(--light-gray);" src="../media/coffeeshop/drinks.png" alt="">
+                        <div class="img-overlay">
+                            <div class="img-title">Drinks</div>
+                            <p class="img-desc">
+                                Different drinks in game.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="img-container" onclick="window.open('../media/coffeeshop/drinkitems.png', '_blank');">
+                        <img style="background-color: var(--light-gray);" src="../media/coffeeshop/drinkitems.png" alt="">
+                        <div class="img-overlay">
+                            <div class="img-title">Drink Ingredients</div>
+                            <p class="img-desc">
+                                The ingredients for each drink.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="img-container" onclick="window.open('../media/coffeeshop/foods.png', '_blank');">
+                        <img style="background-color: var(--light-gray);" src="../media/coffeeshop/foods.png" alt="">
+                        <div class="img-overlay">
+                            <div class="img-title">Foods</div>
+                            <p class="img-desc">
+                                Different foods in game.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="img-container" onclick="window.open('../media/coffeeshop/fooditems.png', '_blank');">
+                        <img style="background-color: var(--light-gray);" src="../media/coffeeshop/fooditems.png" alt="">
+                        <div class="img-overlay">
+                            <div class="img-title">Food Sources</div>
+                            <p class="img-desc">
+                                Different food sources.
+                            </p>
+                        </div>
+                    </div>
+
                     </section>
 
                     <p>

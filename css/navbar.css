@@ -6,6 +6,8 @@
     height: auto;
     z-index:1;
 
+    overflow-x: hidden;
+
     border-bottom: black 3px solid;
 }
 
