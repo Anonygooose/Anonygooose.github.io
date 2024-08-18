@@ -15,7 +15,18 @@ window.onload = function () {
         percentPosition: true,
     });
 
-    let images = document.querySelectorAll("img");
-    lazyload(images);
+    $(function() {
+        $('.lazy').Lazy();
+    });
+
+    $('.lazy').Lazy({
+        // your configuration goes here
+        scrollDirection: 'vertical',
+        effect: 'fadeIn',
+        visibleOnly: true,
+        onError: function(element) {
+            console.log('error loading ' + element.data('src'));
+        }
+    });
 };
 
