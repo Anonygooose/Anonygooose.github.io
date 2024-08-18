@@ -14,5 +14,8 @@ window.onload = function () {
         itemSelector: '.grid-item',
         percentPosition: true,
     });
+
+    let images = document.querySelectorAll("img");
+    lazyload(images);
 };
 
