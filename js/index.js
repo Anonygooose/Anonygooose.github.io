@@ -27,4 +27,10 @@ $(window).load(function(){
         let loadScreen = document.getElementById("loadContent");
         loadScreen.classList.add('fade-out')
     }, 1000);
+
+    
+    setTimeout(function(){
+        let loadScreen = document.getElementById("loadContent");
+        loadScreen.style.zIndex = -2;
+    }, 1500);
 });
