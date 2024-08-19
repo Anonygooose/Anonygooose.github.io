@@ -1,3 +1,18 @@
+
+$(function() {
+    $('.lazy').Lazy();
+});
+
+$('.lazy').Lazy({
+    // your configuration goes here
+    scrollDirection: 'vertical',
+    effect: 'fadeIn',
+    visibleOnly: true,
+    onError: function(element) {
+        console.log('error loading ' + element.data('src'));
+    }
+});
+
 window.onload = function () { 
     $(function(){
     $("#nav-placeholder").load("navbar.html");
@@ -13,20 +28,6 @@ window.onload = function () {
         // do not use .grid-sizer in layout
         itemSelector: '.grid-item',
         percentPosition: true,
-    });
-
-    $(function() {
-        $('.lazy').Lazy();
-    });
-
-    $('.lazy').Lazy({
-        // your configuration goes here
-        scrollDirection: 'vertical',
-        effect: 'fadeIn',
-        visibleOnly: true,
-        onError: function(element) {
-            console.log('error loading ' + element.data('src'));
-        }
     });
 };
 
