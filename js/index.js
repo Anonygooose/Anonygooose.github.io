@@ -1,3 +1,7 @@
+$(function(){
+    $("#loader-placeholder").load("loader.html")
+});
+
 $(window).load(function(){ 
     $(function(){
         $("#nav-placeholder").load("navbar.html");
@@ -25,7 +29,7 @@ $(window).load(function(){
 
     setTimeout(function(){
         let loadScreen = document.getElementById("loadContent");
-        loadScreen.classList.add('fade-out')
+        loadScreen.classList.add('fade-out');
     }, 1000);
 
     
