@@ -17,8 +17,8 @@
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
 
     <script src="js/index.js"></script>  
@@ -26,6 +26,16 @@
     <title>Portfolio</title>
 </head>
 <body>
+
+    <div id="loadContent">
+        <div class="overlay__inner">
+            <div class="overlay__content">
+                <span class="spinner"></span>
+                <p><b class="blue">There are a lot of images!</b><br>This might take awhile :)</p>
+            </div>
+        </div>
+    </div>
+
     <header id="portfolio">
         <div id="nav-placeholder"></div>
     </header>
