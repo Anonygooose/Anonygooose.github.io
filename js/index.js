@@ -11,6 +11,13 @@ $(window).load(function(){
         $("#foot-placeholder").load("footer.html");
     });
 
+    if(document.getElementById('loader-placeholder').innerHTML === "")
+    {
+        $(function(){
+            $("#loader-placeholder").load("loader.html")
+        });
+    }
+
     var $boxes = $('div.lazy');
     $boxes.hide();
   
