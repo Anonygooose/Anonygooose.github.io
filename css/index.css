@@ -55,7 +55,7 @@ body
     background: url(../media/background.gif);
 
     background-repeat: repeat;
-    background-size: fit;
+    background-size: fill;
 
     width: 100%;
     height: auto;
@@ -73,7 +73,7 @@ body
 /* GENERAL STYLING */
 h1, h2, h3
 {
-    font-family: Patua One;
+    font-family: "Patua One";
     font-weight: normal;
 }
 

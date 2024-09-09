@@ -116,9 +116,8 @@ nav img
         display: none;
     }
 
-    input[type='checkbox']:not(:checked)+ul {
-        input[type='checkbox'] {
+    input[type='checkbox']:not(:checked)+ul     
+    {
         display: none;
-    }
     }
 }
