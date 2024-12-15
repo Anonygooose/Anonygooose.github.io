@@ -32,6 +32,28 @@ $(window).load(function(){
       });    
     });
 
+    var coll = document.getElementsByClassName("whole-project");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.firstChild.nextElementSibling;
+
+        if (content.nextElementSibling.style.maxHeight)
+        {
+          content.nextElementSibling.style.maxHeight = null;
+          content.parentNode.style.height = "20vh";
+        } 
+        
+        else {
+          content.nextElementSibling.style.maxHeight = content.nextElementSibling.scrollHeight + "px";
+          content.parentNode.style.height = content.nextElementSibling.scrollHeight + content.scrollHeight + "px";
+        }
+
+      });
+    }    
+
     setTimeout(function(){
         let loadScreen = document.getElementById("loadContent");
         loadScreen.classList.add('fade-out');
