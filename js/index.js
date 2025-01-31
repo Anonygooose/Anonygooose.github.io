@@ -32,23 +32,28 @@ $(window).load(function(){
       });    
     });
 
-    var coll = document.getElementsByClassName("whole-project");
+    var coll = document.getElementsByClassName("background-select");
     var i;
     
     for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.firstChild.nextElementSibling;
+      coll[i].addEventListener("click", function() 
+      {
+        this.parentNode.classList.toggle("active");
+        var wholeProject = this.parentNode;
 
-        if (content.nextElementSibling.style.maxHeight)
+        var content = wholeProject.firstChild.nextElementSibling;
+        var body = content.nextElementSibling;
+
+
+        if (body.style.maxHeight)
         {
-          content.nextElementSibling.style.maxHeight = null;
-          content.parentNode.style.height = "20vh";
+          body.style.maxHeight = null;
+          wholeProject.removeAttribute('style');
         } 
         
         else {
-          content.nextElementSibling.style.maxHeight = content.nextElementSibling.scrollHeight + "px";
-          content.parentNode.style.height = content.nextElementSibling.scrollHeight + content.scrollHeight + "px";
+          body.style.maxHeight = body.scrollHeight + "px";
+          wholeProject.style.height = body.scrollHeight + content.scrollHeight + "px";
         }
 
       });
