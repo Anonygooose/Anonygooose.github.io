@@ -38,10 +38,14 @@ $(window).load(function(){
     for (i = 0; i < coll.length; i++) {
       coll[i].addEventListener("click", function() 
       {
-        this.parentNode.classList.toggle("active");
+        // Whole Project class
         var wholeProject = this.parentNode;
+        wholeProject.classList.toggle("active");
 
+        // Project Info class
         var content = wholeProject.firstChild.nextElementSibling;
+
+        // Project class
         var body = content.nextElementSibling;
 
 
@@ -49,6 +53,8 @@ $(window).load(function(){
         {
           body.style.maxHeight = null;
           wholeProject.removeAttribute('style');
+
+          content.scrollIntoView({behavior: "smooth", block: "center"});
         } 
         
         else {
