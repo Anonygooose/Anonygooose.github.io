@@ -15,23 +15,6 @@ $(window).load(function(){
         $("#loader-placeholder").load("loader.html")
     });
 
-    
-    var $boxes = $('div.lazy');
-    $boxes.hide();
-  
-    var $container = $('.grid');
-    $container.imagesLoaded( function() {
-      $boxes.fadeIn();
-  
-      $container.masonry({
-        // use outer width of grid-sizer for columnWidth
-        columnWidth: '.grid-sizer',
-        // do not use .grid-sizer in layout
-        itemSelector: '.grid-item',
-        percentPosition: true,
-      });    
-    });
-
     var coll = document.getElementsByClassName("background-select");
     var i;
     

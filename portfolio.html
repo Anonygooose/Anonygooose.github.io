@@ -19,6 +19,8 @@
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://assets.codepen.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://assets.codepen.io/16327/Flip.min.js"></script>
 
     <script src="js/index.js"></script>  
 
@@ -535,5 +537,45 @@
             <div id="foot-placeholder"></div>
         </footer>
     </div>
+
+    <script>
+        gsap.registerPlugin(Flip);
+
+        const Animate = function() {
+            const grid = document.querySelector("#portfolioInfo");
+            const items = document.querySelectorAll(".grid-item");
+
+            // Get the state
+            const state = Flip.getState(items);
+
+            // Do the actual shuffling
+            for(let i = items.length; i >= 0; i--) {
+                grid.appendChild(grid.children[Math.random() * i | 0]);
+            }
+
+            Organize();
+        }
+
+        const Organize = function()
+        {
+            var $boxes = $('div.lazy');
+            $boxes.hide();
+        
+            var $container = $('.grid');
+            $container.imagesLoaded( function() {
+            $boxes.fadeIn();
+        
+            $container.masonry({
+                // use outer width of grid-sizer for columnWidth
+                columnWidth: '.grid-sizer',
+                // do not use .grid-sizer in layout
+                itemSelector: '.grid-item',
+                percentPosition: true,
+            });    
+            });
+        }
+
+        Animate();
+    </script>
 </body>
 </html>
