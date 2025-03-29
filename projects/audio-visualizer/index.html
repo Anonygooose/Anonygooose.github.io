@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Audio Visualizer</title>
+  <link href="./styles/default-styles.css" type="text/css" rel="stylesheet" />
+  <script src="./src/loader.js" type="module"></script>
+</head>
+<body>
+<main>
+  <span class="title-span"><h1 id="title"></h1></span>
+
+  <div class="controls">
+    <section>
+      <span><label for="cb-highshelf"><input type="checkbox" id="cb-highshelf">Highshelf Filter (Treble)</label></span>
+
+      <span><label for="cb-lowshelf"><input type="checkbox" id="cb-lowshelf">Lowshelf Filter (Bass)</label></span>
+
+      <span>
+        <label for="cb-distortion"><input type="checkbox" id="cb-distortion">Distortion &emsp;<input type="range" min="0" max="100" value="0" id="slider-distortion"><span id="distortion-amt">???</span></label>
+      </span>
+    </section>
+  </div>
+
+  <span class="title-span"><h2 id="track-title"></h2></span>
+  <section id="canvas-stuff">
+    <canvas width="800" height="400"></canvas>
+    <a href="https://asurrealexperience.tumblr.com/"><img id="character" src="img/character-bounce.gif" alt="character"></a>
+    <span id="blinkies">
+      <!-- should be added here -->
+    </span>
+  </section>
+
+  <div class="controls">
+    <section>
+      <label for="slider-volume">Volume: &emsp;<input type="range" id="slider-volume" min="0" max="2" value="1" step="0.01"><span id="label-volume">???</span></label>
+
+      <button id="btn-play" data-playing="no"></button>
+      <button id="btn-fs">Full Screen</button>
+		
+      <label for="select-track">Track: 
+        <select id="select-track">
+          <!-- should be added here -->
+        </select>
+      </label>
+    </section>
+
+    <section>
+      <span><label for="cb-gradient"><input type="checkbox" id="cb-gradient">Show Gradient</label></span>
+
+      <span><label for="cb-bars"><input type="checkbox" id="cb-bars">Show Bars</label></span>
+
+      <span><label for="cb-spikes"><input type="checkbox" id="cb-spikes">Show Spikes</label></span>
+
+      <!-- we'll use this 4th checkbox soon! -->
+      <span><label for="cb-noise"><input type="checkbox" id="cb-noise">Show Noise</label></span>
+
+      <span><label for="cb-invert"><input type="checkbox" id="cb-invert">Invert Colors</label></span>
+
+      <span><label for="cb-emboss"><input type="checkbox" id="cb-emboss">Show Emboss</label></span>
+
+      <span><label for="cb-sine"><input type="checkbox" id="cb-sine">Show Sine</label></span>
+
+      <span>
+        <button id="select-visualizer">Frequency Data</button>
+      </span>
+    </section>
+  </div>
+
+  <span id="important-span"><p id="important">!! &emsp;Website by Goose Tarlowski &emsp;- &emsp;All Music is Properly Credited &emsp;!!</p></span>
+
+  <span id="cover"></span>
+</main>
+</body>
+</html>
