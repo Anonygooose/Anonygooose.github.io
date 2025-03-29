@@ -178,7 +178,7 @@ p a:active, a:active { color: var(--purple); }
 }
 
 /* ABOUT */
-#about, #portfolioInfo, #resumeInfo
+#about, #resumeInfo
 {
     width: 90%;
     margin: 0 auto;
@@ -192,7 +192,7 @@ p a:active, a:active { color: var(--purple); }
 }
 
 /* PROJECTS */
-#projectInfo
+#projectInfo, #portfolioInfo
 {
     width: 100%;
     margin: 0 auto;
@@ -482,6 +482,8 @@ iframe
     /* max-height: 180px; */
 
     border: 5px solid var(--gray);
+
+    z-index: 99;
 }
 
 .grid-item--width2
@@ -795,6 +797,11 @@ iframe
     .whole-project
     {
         height: 30vh;
+    }
+
+    .portfolio
+    {
+        height: auto !important;
     }
 }
 
