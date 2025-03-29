@@ -1,0 +1,25 @@
+~~ DOCUMENTATION ~~
+
+~~ 2 AUDIO EFFECTS ~~
+I decided to implement the Highshelf Filter, Lowshelf Filter, and Distortion !
+
+~~ SPRITES ~~
+I have two Sprite class names, being Tangerine and Sine
+
+TANGERINE : Simply draws an image of a Tangerine on screen at a specific location. The Tangerine both rotates & pulses, depending on the 50th (or, technically 51st) AudioData position. I didn't have any actual reasoning as to why I chose this number, it looked nice and felt like it moved enough.
+
+SINE : The user has the ability to choose to turn this off or not! It summons 60 circles of various sizes, speeds, and heights on a sine path across the canvas.
+
+~~ APP DATA ~~
+APP TITLE : It's the title of the app - basically changes the website name and h1 title found within the html.
+
+ARRAY OF SONGS : The title of the song (placed above the canvas), artist (placed above the canvas), file (the location in which the file is found), duration (drawn on the bottom right corner of the canvas), comment (drawn in the upper/middle-ish/left-ish area of the canvas), and url (takes you to the spotify song if you click the artist's name).
+
+STARTING STATE : Volume value (0-2), if the highshelf is selected, if the lowshelf is selected, if the distortion is slected, the distortion value (0-100), if the gradient should be shown, if the bars should be shown, if the spikes should be shown, if the noise should be shown, if invert is selected, if emboss is selected, if sine is selected, and if the user is using frequency data or not.
+
+~~ AESTHETICS ~~
+I love early web-core, bright colors at full saturation - so that's what I did! The songs I chose also reflected these vibes... sorry for your ears. I personally believe I deserve the full 15% for going above and beyond with the aesthetic requirements - I added a checkered background over a rainbow gradient, with rainbow text involved as well. I added the cat on the bottom left of the canvas (my character for a game I have been working on for several years now) since it's also his entire vibe, along with the tangerine at the top right to reflect an inside-joke within the game. On top of this, all of the colors go through a hue-rotate in the loop, causing some crazy color changes.
+
+Canvas-wise, I implemented sharp spikes as it kind of relates to the vibes of this amount of vibrant colors and noise. The blow is softened with the blowing of sines in the background, which also helps push my idea of this aesthetic. The static is colored, changing along with the hue-changes.
+
+If you were to click the cat at the bottom of the canvas, I would prepare your eyes even further if you want to see the vibes I was going for. It is the entire theme of the game I am creating, which has been my inspiration for this entire assignment.
