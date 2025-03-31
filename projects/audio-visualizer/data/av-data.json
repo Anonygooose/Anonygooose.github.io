@@ -1,0 +1,80 @@
+{
+    "appTitle" : "THE AUDIOVISUALIZERRRR ~!",
+
+    "audioTracks" : 
+    [
+        {
+          "title" : "dog talk!",
+          "artist" : "spellcasting",
+          "file" : "media/dog-talk.mp3",
+          "duration" : "0:42",
+          "comment" : "WOOF",
+          "url" : "https://open.spotify.com/track/3PMWQMlfEqAAwHkyLqHwxy?si=209e0d601dd74dd9"
+        },
+        {
+            "title" : "GARBAGE GALAXY!",
+            "artist" : "spellcasting",
+            "file" : "media/GARBAGE-GALAXY.mp3",
+            "duration" : "1:51",
+            "comment" : "0H SO SweET",
+            "url" : "https://open.spotify.com/track/4VpHtODSoTR4a0tpnQd6Ot?si=465d3d16b51246ce"
+        },
+        {
+            "title" : "Go Kitty Go",
+            "artist" : "Olaska",
+            "file" : "media/Go-Kitty-Go.mp3",
+            "duration" : "0:42"  ,
+            "comment" : "!!!PUMP IT UP!!!",
+            "url" : "https://open.spotify.com/track/6GtmUSlTUBqMugS0YpDuG6?si=d9ffa985c7c2495d"
+        },
+        {
+            "title" : "GOT UR NUMB3R (v2)",
+            "artist" : "bugcried",
+            "file" : "media/GOT-UR-NUMB3R.mp3",
+            "duration" : "2:33",
+            "comment" : "~ Y0UR 3ARS R BL33D!NG !",
+            "url" : "https://open.spotify.com/track/0diD9SEK0oNBOx0p0QGvAB?si=b78ab2ceb841489e"
+        },
+        {
+            "title" : "Kitty City",
+            "artist" : "cyriak",
+            "file" : "media/Kitty-City.mp3",
+            "duration" : "2:25",
+            "comment" : "MEOW",
+            "url" : "https://open.spotify.com/track/2lx3KjCKt6K9ANXZViY6Nv?si=59617a33b6a4497a"
+        },
+        {
+            "title" : "The Flute Tune - Soulpride Remix",
+            "artist" : "Jaycut, Kolt Siewerts, Soulpride",
+            "file" : "media/The-Flute-Tune.mp3",
+            "duration" : "5:23",
+            "comment" : "W@CKY ?",
+            "url" : "https://open.spotify.com/track/6FO7xjaaOBT9RDa0GDlyxr?si=91a444fa15494a88"
+        },
+        {
+            "title" : "What Is Logical",
+            "artist" : "SloFever",
+            "file" : "media/What-Is-Logical.mp3",
+            "duration" : "1:05",
+            "comment" : "IM C0NFUS3D??",
+            "url" : "https://open.spotify.com/track/7CQn2rb9CSy8nnER6YNLAn?si=b9c0694caa1e4d3b"
+        }
+    ],
+
+    "startingState" :
+    {
+        "volume" : 1,
+        "highshelf" : false,
+        "lowshelf" : false,
+        "distortion" : false,
+        "distortionAmount" : 20,
+        "showGradient" : false,
+        "showBars" : true,
+        "showSpikes" : true,
+        "showNoise" : true,
+        "showInvert" : false,
+        "showEmboss" : false,
+        "showSine" : true,
+        "useFrequencyData" : true
+    }
+}
