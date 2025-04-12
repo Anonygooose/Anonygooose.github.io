@@ -1,18 +1,20 @@
+let base = document.location.origin;
+
 $(function(){
-    $("#loader-placeholder").load("loader.html")
+    $("#loader-placeholder").load(`${base}/loader.html`)
 });
 
 $(window).load(function(){ 
     $(function(){
-        $("#nav-placeholder").load("navbar.html");
+        $("#nav-placeholder").load(`${base}/navbar.html`);
     });
 
     $(function(){
-        $("#foot-placeholder").load("footer.html");
+        $("#foot-placeholder").load(`${base}/footer.html`);
     });
 
     $(function(){
-        $("#loader-placeholder").load("loader.html")
+        $("#loader-placeholder").load(`${base}/loader.html`)
     });
 
     var coll = document.getElementsByClassName("background-select");
@@ -59,3 +61,8 @@ $(window).load(function(){
         loadScreen.style.zIndex = -2;
     }, 1500);
 });
+
+const loader = (e) =>
+{
+  
+}
