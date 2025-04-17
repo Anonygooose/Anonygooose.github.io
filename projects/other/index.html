@@ -46,23 +46,118 @@
                 <a class="blue" href="projects/other">☆ OTHER ☆</a>
             </div>
 
-            <div id="projectInfo">
+            <div id="projectInfo">                
+                <!-- STEALTH PACKAGE -->
+                <section class="whole-project">
+                    <section class="project-info">
+                        <h1 class="purple">Unreal Engine - Deaf Enemy Stealth Package</h1>
+                        <p class="info yellow"><b class="blue">March 2025</b><br>Blueprint Scripting using Unreal Engine</p>
+                        <p class="bio">
+                            This package is a completely sound-based stealth system, utilizing the sounds that both the player and environment create to trigger enemies. Although the enemies are completely blind, this may be adjusted to one’s liking. At the moment, things that create sound are: crouching (barely), walking, running, and thrown objects.<br><br>
+                        </p>
+                    </section>
+                    <section class="project">
+                        <h3 class="purple">How It Works...</h3>
+                        <p>
+                            As mentioned, the enemies are entirely blind, meaning that all player-detection has to do with sound. When the player moves, it creates different amounts of sound depending on the type of movement. What I mean is sprinting, for example, is incredibly loud and allows for enemies to hear the player from across the map. Crouching, however, is near silent and forces the enemies to be right up to the player in order to detect them.<br><br>
+
+                            The state machines take place in both an Enemy-State machine and the Enemy’s BluePrint itself. When an enemy “Wanders”, it chooses random points across the map to traverse to. However, when a noise is made nearby (such as a thrown object or player movement), enemies will turn into an Alert state. They will travel to the last known sound-location, and if they do not switch into the “Detected” state, they will visually throw a fit. This shows the player that the enemy did not find them, and that they are safe (for now). If “Detected” the enemy will change immediately into “Chase” and go after the player as long as they are within their range (or outside of their range for less than 3 seconds). If enemies get to the player, they will “Attack” and play an animation before returning to “Chase.” Once outside of their zone, enemies will return to their “Alert” state and finally their “Wander” state.<br><br>
+
+                            Enemy diffusion is incredibly simple, as players can either distract attacking enemies through throwing objects (which create a relatively loud noise) or by running far enough away and silently making their way to safety. Although enemies currently do not possess a way to contact other enemies, the ability to implement this is relatively simple (if I had more time, I would have personally added a “Call” state that would randomly trigger every time an enemy enters the “Chase” state, which would be louder than any other possible sound and cause enemies within the same room to make their way to the caller).<br><br>
+
+                        </p>
+                        
+                        <h3 class="purple">Limitations</h3>
+                        <p>
+                            Currently, this package does not contain any information regarding enemy-sight, as it is an entirely blind-enemy-based package. Although you may add your own vision sense, this package will never be updated to utilize it.
+                        </p>
+
+                        <h3 class="purple">Known Bugs / Future Ideas</h3>
+                        <p>
+                            There are no known bugs, but rather slight issues caused by a pure lack of knowledge and inability to search for solutions online. This includes giving enemies a travel timer, where if they don’t reach their target within a few seconds they will return back to a wandering state. This allows for a more realistic travel system, as well as removing additional possibilities of soft-locking enemies (e.g., trying to reach a sound across an otherwise impassable wall). I would love to figure this out for the future, however!<br>
+                        </p>
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KjTwgVM0ekU?si=YuTCO80HmvsR6qyL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+
+                        <h3 class="purple">What I Gained</h3>
+                        <p>
+                            This was one of my first experiences with Unreal, which was really intriguing to figure out. This mechanic allowed me to think out of the box as well, as most others took "create a Stealth Mechanic" as a simple sight-based once. I love the idea of deaf enemies and would love to see more of them in media, so this was a fun challenge to get through.<br>
+                            Some notable aspects of this package:<br>
+                            <b class="yellow">
+                                - Utilizing PawnSensing and AIPerception to determine where sounds are located and how loud they are.<br>
+                                - Creating footsteps that differ in volume depending on *how* the player is moving.<br>
+                                - Using state machines to determine if the enemies should wander, stay alert, or chase & attack the player.<br>
+                            </b><br>
+
+                            I’m honestly impressed with how the final state of this mechanic turned out, as I felt a little too courageous at points when I decided to go through with an entire Blind-Enemy / Sound-Based stealth system. Although it’s not as in-depth as I would have preferred, it’s still got details I would not have imagined creating prior to taking this class.<br>
+                        </p>
+                    </section>
+                    <span class="background-select"></span>
+                </section>
+                
+                <!-- SKILL TREE PACKAGE -->
+                <section class="whole-project">
+                    <section class="project-info">
+                        <h1 class="purple">Unity - Simple Skill Tree Package</h1>
+                        <p class="info yellow"><b class="blue">February 2025</b><br>C# using Unity</p>
+                        <p class="bio">
+                            This package contains the barebones of a skill tree; it checks for user input, changes color based on availability, generates lines between parent and child nodes, and saves every time the application is closed. Adding skills to the tree is incredibly simple, and although they currently contain no functionality in regards to gameplay (eg; providing the player with stats or skills), the scripts are structured in a way that is easy to add on to.<br><br>
+                        </p>
+                    </section>
+                    <section class="project">
+                        <h3 class="purple">How It Works...</h3>
+                        <p>
+                            The data structure is simple, with each of the Skills linking to each other through fields from their classes. This allows for Skills to know who they are related to, and draw lines & check unlockability based off this information. I had originally used a JSON file to manage this, but I realized that this turned out to be rather clunky and confusing when the user could just fill out fields that are available on the GameObjects themself.<br><br>
+                            
+                            Progression management is also simple, as a save is created onto a Text File created in the same location as the application itself. It saves the player’s total amount of points, their current amount of points, and every skill’s current state of locked / unlocked. The application saves on exit automatically, so the player does not have to do anything in order to trigger a save.<br><br>
+                            
+                            Skill Activation is dependent on a few factors. These factors include if their tier is lower than / equal to the player’s total amount of points, if their cost is lower than / equal to the player’s current amount of points, and if their parents are currently unlocked. Colors change also depending on this state, visually indicating to the player what skills are in or out of reach.<br>
+                        </p>
+                        
+                        <h3 class="purple">Limitations</h3>
+                        <p>
+                            Currently, this package does not contain any form of player progression (such as gaining stats or skills). Although this may not be difficult to implement, it is a downside of using this package.<br><br>
+                            
+                            Along with this, the SkillTree GameObject currently holds every Skill that exists on-run. This may cause lag if too many Skills are added, though may be fixed through editing the code in order to have a singular SkillTree per one that exists.<br>
+                        </p>
+
+                        <h3 class="purple">Known Bugs / Future Ideas</h3>
+                        <p>
+                            There are no known bugs at the moment, however after submitting I realized that every single Skill being stored in one list is a terrible idea, especially for lag reasons. If I were to update this package in the future, I would definitely edit this to create multiple lists per “tree” there is.<br>
+                        </p>
+
+                        <h3 class="purple">What I Gained</h3>
+                        <p>
+                            This was my first ever package, where I was tasked to create a skill tree within a couple of weeks. This was a fun challenge and allowed myself to focus in on the mechanic itself, rather than the game overall.<br>
+                            Some notable aspects of this package:<br>
+                            <b class="yellow">
+                                - Using LineRenderers to draw lines between connected nodes.<br>
+                                - Implementing [SerializeFields] to make adding skills far easier for small-scope experiences.<br>
+                                - Saves all of the node data in a separate file when the project is closed, allowing it to be loaded in later.<br>
+                            </b><br>
+
+                            The final state of this mechanic is just as good as I had hoped! Although it didn't achieve every goal I had in mind (such as an obvious way to implement functionality (not that it isn’t difficult as it is, just that there isn’t any current base to do so)), it was a lot more than I personally thought I would have been able to accomplish.<br>
+                        </p>
+                    </section>
+                    <span class="background-select"></span>
+                </section>
+
                 <!-- AFTERLIFE -->
                 <section class="whole-project">
                     <section class="project-info">
                         <h1 class="purple">Afterlife After Hours</h1>
-                        <p class="info"><b class="yellow">Present</b><br>(Voice Actor)</p>
+                        <p class="info yellow"><b class="blue">Present</b><br>(Voice Actor)</p>
                         <p class="bio">
                             Welcome to Afterlife After Hours, the only show in Limbo! Afterlife After Hours is a webseries featuring a fictional news show for the troubled souls of Limbo. Join Skulson and his friends as they deliver the news of an empty void, while they struggle against the trauma that keeps them there!.<br><br>
                         </p>
                     </section>
                     <section class="project">
-                        <h3>Realease</h3>
+                        <h3 class="purple">Release</h3>
                         <p>
                             Check out the channel for yourself! on <a class="pink" href="https://www.youtube.com/@AfterlifeAfterHours">YouTube</a> or <a class="pink" href="https://www.newgrounds.com/portal/view/920445">Newgrounds</a><br>
                         </p>
 
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=Eyuhq3CQS9F3kAp3&amp;list=PL6oJCat0-7sY2JEn8Pnu3G33MvRv04XU5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=Eyuhq3CQS9F3kAp3&amp;list=PL6oJCat0-7sY2JEn8Pnu3G33MvRv04XU5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
 
                         <h3 class="purple">What I Gained</h3>
                         <p>
