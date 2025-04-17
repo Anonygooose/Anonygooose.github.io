@@ -178,7 +178,7 @@ p a:active, a:active { color: var(--purple); }
 }
 
 /* ABOUT */
-#about, #portfolioInfo, #resumeInfo
+#about, #resumeInfo
 {
     width: 90%;
     margin: 0 auto;
@@ -192,7 +192,7 @@ p a:active, a:active { color: var(--purple); }
 }
 
 /* PROJECTS */
-#projectInfo
+#projectInfo, #portfolioInfo
 {
     width: 100%;
     margin: 0 auto;
@@ -264,7 +264,7 @@ p a:active, a:active { color: var(--purple); }
     position: absolute;
     top: 0;
 
-    z-index: 99;
+    z-index: 5;
 }
 
 .background-select:active
@@ -304,8 +304,9 @@ p a:active, a:active { color: var(--purple); }
     position: relative;
     z-index: 99;
 
-    width: 90%;
     margin: auto auto;
+
+    display:inline-block; 
 }
 
 .project h1
@@ -509,7 +510,9 @@ iframe
     height: auto;
     /* max-height: 180px; */
 
-    border: 5px solid var(--gray);
+    border: 5px solid var(--black);
+
+    z-index: 99;
 }
 
 .grid-item--width2
@@ -652,7 +655,7 @@ iframe
         height: auto;
         /* max-height: 180px; */
 
-        border: 5px solid var(--gray);
+        border: 5px solid var(--black);
     }
 
     .grid-item--width2
@@ -765,7 +768,7 @@ iframe
         height: auto;
         /* max-height: 180px; */
 
-        border: 5px solid var(--gray);
+        border: 5px solid var(--black);
     }
 
     .grid-item--width2
@@ -823,6 +826,11 @@ iframe
     .whole-project
     {
         height: 30vh;
+    }
+
+    .portfolio
+    {
+        height: auto !important;
     }
 }
 
