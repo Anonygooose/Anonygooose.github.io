@@ -48,6 +48,14 @@ a.purple:active, .purple:focus
     color: var(--white);
 }
 
+::selection
+{
+    background: var(--pink);
+    color: var(--black)
+}
+
+.blue::selection, .pink::selection, .yellow::selection, .purple::selection { color: var(--light-gray); }
+
 /* BACKGROUND */
 body
 {
