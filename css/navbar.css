@@ -41,6 +41,7 @@ nav li
 {
     display: inline-flex;
     margin: 5px 15px 0;
+    font-size: 100%;
 }
 
 nav label
@@ -56,6 +57,14 @@ nav img
 {
     width: 150px;
     float: left;
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)
+{
+    nav li
+    {
+        font-size: 130%;
+    }
 }
 
 @media only screen and (max-width: 768px)
@@ -110,6 +119,8 @@ nav img
         text-align: right;
 
         padding: 0.5em;
+
+        font-size: 130%;
     }
 
     nav .end

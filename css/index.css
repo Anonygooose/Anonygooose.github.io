@@ -591,6 +591,8 @@ iframe
 
     opacity: 0;
     transition: opacity 0.25s;
+
+
 }
 
 .img-overlay:hover
@@ -610,11 +612,11 @@ iframe
 
 .img-desc
 {
-    font-size: 85%;
+    font-size: 90%;
     margin-top: 0.25em;
 
     text-align: center !important;
-    margin: 0 10%;
+    margin: 0 5%;
 }
 
 /* SCROLLBARS */
@@ -646,29 +648,8 @@ iframe
 /* No media query for `xs` since this is the default in Bootstrap */
 
 /* [sm] Small devices, 576px and up */
-@media (min-width: 576px) 
+@media (min-width: 576px)
 {
-    
-    .grid-sizer
-    {
-        width: 50%;
-    }
-
-    .grid-item
-    {
-        width: calc(50% - 10px);
-        height: auto;
-        /* max-height: 180px; */
-
-        border: 5px solid var(--black);
-    }
-
-    .grid-item--width2
-    {
-        width: calc(100% - 10px);
-        height: auto;
-    }
-
     .img-title
     {
         font-size: 120%;
@@ -699,8 +680,41 @@ iframe
     }
 }
 
+@media screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)
+{
+    .main-footer
+    {
+        width: 85vw !important;
+    }
+
+    .project-info p
+    {
+        font-size: 120%;
+    }
+}
+
 /* [md] Medium devices, 768px and up */
-@media (min-width: 768px) {
+@media (min-width: 768px), screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+    .grid-sizer
+    {
+        width: 50%;
+    }
+
+    .grid-item
+    {
+        width: calc(50% - 10px);
+        height: auto;
+        /* max-height: 180px; */
+
+        border: 5px solid var(--black);
+    }
+
+    .grid-item--width2
+    {
+        width: calc(100% - 10px);
+        height: auto;
+    }
+    
     .main-footer
     {
         width: 60vw;
@@ -762,6 +776,15 @@ iframe
         background-color: var(--dark-gray);
     }
 
+    /* PROJECT */
+    .project-info
+    {
+        width: 80%;
+    }
+}
+
+/* [lg] Large desktops, 992px and up */
+@media (min-width: 992px) and (orientation: landscape) {
     .grid-sizer
     {
         width: 25%;
@@ -792,19 +815,12 @@ iframe
 
     .img-desc
     {
-        font-size: 100%;
+        font-size: 80%;
         margin-top: 0.25em;
+
+        width: 90% !important;
     }
 
-    /* PROJECT */
-    .project-info
-    {
-        width: 80%;
-    }
-}
-
-/* [lg] Large desktops, 992px and up */
-@media (min-width: 992px) {
     .project p, .project-info p
     {
         width: 50%;
@@ -827,7 +843,7 @@ iframe
 }
 
 /* [xl] Extra large devices 1200px and up */
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (orientation: landscape) {
     .whole-project
     {
         height: 30vh;
