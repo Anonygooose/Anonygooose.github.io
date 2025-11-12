@@ -47,6 +47,108 @@
             </div>
 
             <div id="projectInfo">
+                <!-- SKINNERT -->
+                <section class="whole-project">
+                    <section class="project-info">
+                        <h1 class="purple">SKINNERET</h1>
+                        <p class="info yellow"><b class="blue">August 2025 - Present</b><br>(GDScript using Godot)</p>
+                        <p class="bio">
+                            Carefully navigate a dark and crumbling manor as you try to find a way out, as it's made abundantly clear that <i>you're not alone.</i> A large, spider-like entity stalks your every move. The longer you haven't seen it, the more you should worry.<br><br>
+                        </p>
+                    </section>
+                    <section class="project">
+                        <h3 class="purple">What Is It?</h3>
+                        <p>
+                            SKINNERET is a 3D First-Person horror game where the player must escape a manor while being hunted by a dangerous entity. The player must collect keys throughout the environment to unlock a door and escape.<br><br>
+                        </p>
+
+                        <h3 class="purple">Goal</h3>
+                        <p>
+                            Like any great horror story, the player enters a manor that locks them inside. They must find a way to escape, searching for a handful of keys hidden carefully throughout the building. They're spread across the map, pushing the player to explore in order to progress. However, they must be careful about the time it takes for this to occur, as The Spider gradually grows more and more irritated with the player's presence.<br><br>
+                        </p>
+    
+                        <h3 class="purple">The Enemy...</h3>
+                        <p>
+                            The Spider that resides within this dreadful manor is the largest threat the player comes across, varying in actions and states. This creature isn't your classic "charge and hit" enemy, no, it's smarter than that. It wanders throughout the manor in a node-based wandering system, watching and listening for the player. Once it detects their presense, it'll begin hunting.<br>
+                            
+                            While the player is busy looking for keys, The Spider quiets down and follows the player from behind, trying its best to go undetected. And then it strikes from behind, screeching at and throwing the player before fleeing to the furthest node. This only occurs if it <i>is</i> successful in its hunt, if the player turns around and catches it before it acts it'll freeze, staring the player down. The player must then run in order to avoid triggering it further.<br>
+                            
+                            This enemy creates a tension unseen in many games of this genre, feeding into the player's anxiety through it's incredible audio and game design.<br><br>
+                        </p>
+    
+                        <!-- <h3 class="purple">Release</h3>
+                        <p>
+                            Our TTRPG is actively published on drivethrurpg! <a class="pink" href="https://www.drivethrurpg.com/en/product/505093/lights-of-entoma">Check out the game for yourself!</a><br>
+                        </p> -->
+    
+                        <section class="images">
+                            <div class="img-container lazy" onclick="window.open('../media/skinneret/get_thrown.gif', '_blank');">
+                                <img class="lazy" src="../../media/skinneret/thumbnail/get_thrown.gif" alt="">
+                                <div class="img-overlay">
+                                    <div class="img-title">Enemy Attack</div>
+                                    <p class="img-desc">
+                                        Enemy tossing the Player.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="img-container lazy" onclick="window.open('../media/skinneret/spider.png', '_blank');">
+                                <img class="lazy" src="../../media/skinneret/thumbnail/spider.jpg" alt="">
+                                <div class="img-overlay">
+                                    <div class="img-title">The Enemy</div>
+                                    <p class="img-desc">
+                                        The Spider peering from the halls.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="img-container lazy" onclick="window.open('../media/skinneret/key.png', '_blank');">
+                                <img class="lazy" src="../../media/skinneret/thumbnail/key.jpg" alt="">
+                                <div class="img-overlay">
+                                    <div class="img-title">Key</div>
+                                    <p class="img-desc">
+                                        A key location.
+                                    </p>
+                                </div>
+                            </div>
+                                
+                            <div class="img-container lazy" onclick="window.open('../media/skinneret/hole.png', '_blank');">
+                                <img class="lazy" src="../../media/skinneret/thumbnail/hole.jpg" alt="">
+                                <div class="img-overlay">
+                                    <div class="img-title">Hole</div>
+                                    <p class="img-desc">
+                                        Hole.
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <div class="img-container lazy" onclick="window.open('../media/skinneret/key2.png', '_blank');">
+                                <img class="lazy" src="../../media/skinneret/key2.png" alt="">
+                                <div class="img-overlay">
+                                    <div class="img-title">Key Location</div>
+                                    <p class="img-desc">
+                                        Another Key Location.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <h3 class="purple">What I Gained</h3>
+                        <p>
+                            This is a project I am actively working on alongside 3 others. I took on the role of lead gameplay programmer, developing the Enemy's different states and setting up the main gameplay loop.<br>
+                            My tasks included:<br>
+                            <b class="yellow">
+                                - Provided some intial ideas for the game's loop and style, as well as participating in setting up intial project organization.<br>
+                                - Developed player movement and visual detection, triggering one of the numerous states the Enemy has.<br>
+                                - Set up and worked entirely on the various Enemy states, aiming on creating a persistent, yet avoidable threat for the player.<br><br>
+                            </b>
+
+                            SKINNERET was a wonderful opportunity for me to work on gameplay programming, as well as a meaningful chance to work with a smaller group of individuals on a project. It allowed for me to experiment with a variety of different gameplay ideas that could enhance player experience.<br>
+                        </p>
+
+                    </section>
+                    <span class="background-select"></span>
+                </section>
 
                 <!-- LIGHTS OF ENTOMA -->
                 <section class="whole-project">
@@ -82,7 +184,7 @@
     
                         <section class="images">
                             <div class="img-container lazy" onclick="window.open('../media/entoma/cover.png', '_blank');">
-                                <img class="lazy" src="../../media/entoma/cover.png" alt="">
+                                <img class="lazy" src="../../media/entoma/thumbnail/cover.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Cover</div>
                                     <p class="img-desc">
@@ -92,7 +194,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/entoma/back.png', '_blank');">
-                                <img class="lazy" src="../../media/entoma/back.png" alt="">
+                                <img class="lazy" src="../../media/entoma/thumbnail/back.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Back Cover</div>
                                     <p class="img-desc">
@@ -102,7 +204,7 @@
                             </div>
 
                             <div class="img-container lazy" onclick="window.open('../media/entoma/flyer.png', '_blank');">
-                                <img class="lazy" src="../../media/entoma/flyer.png" alt="">
+                                <img class="lazy" src="../../media/entoma/thumbnail/flyer.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Flyer</div>
                                     <p class="img-desc">
@@ -112,7 +214,7 @@
                             </div>
                                 
                             <div class="img-container lazy" onclick="window.open('../media/entoma/charactersheet.png', '_blank');">
-                                <img class="lazy" src="../../media/entoma/charactersheet.png" alt="">
+                                <img class="lazy" src="../../media/entoma/thumbnail/charactersheet.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Character Sheet</div>
                                     <p class="img-desc">
@@ -122,7 +224,7 @@
                             </div>
     
                             <div class="img-container lazy" onclick="window.open('../media/entoma/reputation.png', '_blank');">
-                                <img class="lazy" src="../../media/entoma/reputation.png" alt="">
+                                <img class="lazy" src="../../media/entoma/thumbnail/reputation.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Mechanics</div>
                                     <p class="img-desc">
@@ -132,7 +234,7 @@
                             </div>
 
                             <div class="img-container lazy" onclick="window.open('../media/entoma/constellations.png', '_blank');">
-                                <img class="lazy" src="../../media/entoma/constellations.png" alt="">
+                                <img class="lazy" src="../../media/entoma/thumbnail/constellations.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Constellations</div>
                                     <p class="img-desc">
@@ -142,7 +244,7 @@
                             </div>
 
                             <div class="img-container lazy" onclick="window.open('../media/entoma/magic.png', '_blank');">
-                                <img class="lazy" src="../../media/entoma/magic.png" alt="">
+                                <img class="lazy" src="../../media/entoma/thumbnail/magic.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Magic</div>
                                     <p class="img-desc">
@@ -152,7 +254,7 @@
                             </div>
 
                             <div class="img-container lazy" onclick="window.open('../media/entoma/entomoid.png', '_blank');">
-                                <img class="lazy" src="../../media/entoma/entomoid.png" alt="">
+                                <img class="lazy" src="../../media/entoma/thumbnail/entomoid.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Entomoid</div>
                                     <p class="img-desc">
@@ -205,7 +307,7 @@
                         
                         <section class="images">
                             <div class="img-container lazy" onclick="window.open('../media/servo/title.png', '_blank');">
-                                <img class="lazy" src="../../media/servo/title.png" alt="">
+                                <img class="lazy" src="../../media/servo/thumbnail/title.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Title Screen</div>
                                     <p class="img-desc">
@@ -214,7 +316,7 @@
                                 </div>
                             </div>
                             <div class="img-container lazy" onclick="window.open('../media/servo/jump.png', '_blank');">
-                                <img class="lazy" src="../../media/servo/jump.png" alt="">
+                                <img class="lazy" src="../../media/servo/thumbnail/jump.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Jumper</div>
                                     <p class="img-desc">
@@ -223,7 +325,7 @@
                                 </div>
                             </div>
                             <div class="img-container lazy" onclick="window.open('../media/servo/var-view.png', '_blank');">
-                                <img class="lazy" src="../../media/servo/far-view.png" alt="">
+                                <img class="lazy" src="../../media/servo/thumbnail/far-view.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">The Town</div>
                                     <p class="img-desc">
@@ -232,7 +334,7 @@
                                 </div>
                             </div>
                             <div class="img-container lazy" onclick="window.open('../media/servo/monster.png', '_blank');">
-                                <img class="lazy" src="../../media/servo/monster.png" alt="">
+                                <img class="lazy" src="../../media/servo/thumbnail/monster.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">You Monster...</div>
                                     <p class="img-desc">
@@ -241,7 +343,7 @@
                                 </div>
                             </div>
                             <div class="img-container lazy" onclick="window.open('../media/servo/sunrise.png', '_blank');">
-                                <img class="lazy" src="../../media/servo/sunrise.png" alt="">
+                                <img class="lazy" src="../../media/servo/thumbnail/sunrise.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Sunrise</div>
                                     <p class="img-desc">
@@ -250,7 +352,7 @@
                                 </div>
                             </div>
                             <div class="img-container lazy" onclick="window.open('../media/servo/bench.png', '_blank');">
-                                <img class="lazy" src="../../media/servo/bench.png" alt="">
+                                <img class="lazy" src="../../media/servo/thumbnail/bench.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Servo Sitting on a Bench</div>
                                     <p class="img-desc">
@@ -259,7 +361,7 @@
                                 </div>
                             </div>
                             <div class="img-container lazy" onclick="window.open('../media/servo/water.png', '_blank');">
-                                <img class="lazy" src="../../media/servo/water.png" alt="">
+                                <img class="lazy" src="../../media/servo/thumbnail/water.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Drowning</div>
                                     <p class="img-desc">
@@ -268,7 +370,7 @@
                                 </div>
                             </div>
                             <div class="img-container lazy" onclick="window.open('../media/servo/with-cat.png', '_blank');">
-                                <img class="lazy" src="../../media/servo/with-cat.png" alt="">
+                                <img class="lazy" src="../../media/servo/thumbnail/with-cat.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Kitty Chilling</div>
                                     <p class="img-desc">
@@ -320,7 +422,7 @@
                         <section class="images">
 
                             <div class="img-container lazy" onclick="window.open('../media/coffeeshop/title.png', '_blank');">
-                                <img class="lazy" src="../../media/coffeeshop/title.png" alt="">
+                                <img class="lazy" src="../../media/coffeeshop/thumbnail/title.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Title Screen</div>
                                     <p class="img-desc">
@@ -330,7 +432,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/coffeeshop/gamejamgetlaunched.png', '_blank');">
-                                <img class="lazy" src="../../media/coffeeshop/gamejamgetlaunched.png" alt="">
+                                <img class="lazy" src="../../media/coffeeshop/thumbnail/gamejamgetlaunched.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Get Launched!</div>
                                     <p class="img-desc">
@@ -340,7 +442,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/coffeeshop/gamejamwhat.png', '_blank');">
-                                <img class="lazy" src="../../media/coffeeshop/gamejamwhat.png" alt="">
+                                <img class="lazy" src="../../media/coffeeshop/thumbnail/gamejamwhat.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">That's Our Name!</div>
                                     <p class="img-desc">
@@ -350,7 +452,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/coffeeshop/gamejamkitchen.png', '_blank');">
-                                <img class="lazy" src="../../media/coffeeshop/gamejamkitchen.png" alt="">
+                                <img class="lazy" src="../../media/coffeeshop/thumbnail/gamejamkitchen.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Kitchen</div>
                                     <p class="img-desc">
@@ -360,7 +462,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/coffeeshop/gamejamgang.png', '_blank');">
-                                <img class="lazy" src="../../media/coffeeshop/gamejamgang.png" alt="">
+                                <img class="lazy" src="../../media/coffeeshop/thumbnail/gamejamgang.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">The Team</div>
                                     <p class="img-desc">
@@ -370,7 +472,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/coffeeshop/ophie.png', '_blank');">
-                                <img class="lazy" src="../../media/coffeeshop/ophie.png" alt="">
+                                <img class="lazy" src="../../media/coffeeshop/thumbnail/ophie.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">An Extra Customer</div>
                                     <p class="img-desc">
@@ -380,7 +482,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/coffeeshop/test.png', '_blank');">
-                                <img class="lazy" src="../../media/coffeeshop/test.png" alt="">
+                                <img class="lazy" src="../../media/coffeeshop/thumbnail/test.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">test.png</div>
                                     <p class="img-desc">
@@ -390,7 +492,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/coffeeshop/drinks.png', '_blank');">
-                                <img style="background-color: var(--light-gray);" src="../../media/coffeeshop/drinks.png" alt="">
+                                <img style="background-color: var(--light-gray);" src="../../media/coffeeshop/thumbnail/drinks.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Drinks</div>
                                     <p class="img-desc">
@@ -400,7 +502,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/coffeeshop/drinkitems.png', '_blank');">
-                                <img style="background-color: var(--light-gray);" src="../../media/coffeeshop/drinkitems.png" alt="">
+                                <img style="background-color: var(--light-gray);" src="../../media/coffeeshop/thumbnail/drinkitems.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Drink Ingredients</div>
                                     <p class="img-desc">
@@ -410,7 +512,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/coffeeshop/foods.png', '_blank');">
-                                <img style="background-color: var(--light-gray);" src="../../media/coffeeshop/foods.png" alt="">
+                                <img style="background-color: var(--light-gray);" src="../../media/coffeeshop/thumbnail/foods.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Foods</div>
                                     <p class="img-desc">
@@ -420,7 +522,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/coffeeshop/fooditems.png', '_blank');">
-                                <img style="background-color: var(--light-gray);" src="../../media/coffeeshop/fooditems.png" alt="">
+                                <img style="background-color: var(--light-gray);" src="../../media/coffeeshop/thumbnail/fooditems.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Food Sources</div>
                                     <p class="img-desc">
@@ -463,7 +565,7 @@
     
                             <section class="images">
                             <div class="img-container lazy" onclick="window.open('../media/spareparts/game.jpg', '_blank');">
-                                <img class="lazy" src="../../media/spareparts/game.jpg" alt="">
+                                <img class="lazy" src="../../media/spareparts/thumbnail/game.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">The Game</div>
                                     <p class="img-desc">
@@ -473,7 +575,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/spareparts/boxtop.jpg', '_blank');">
-                                <img class="lazy" src="../../media/spareparts/boxtop.jpg" alt="">
+                                <img class="lazy" src="../../media/spareparts/thumbnail/boxtop.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">The Box</div>
                                     <p class="img-desc">
@@ -483,7 +585,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/spareparts/boxside.jpg', '_blank');">
-                                <img class="lazy" src="../../media/spareparts/boxside.jpg" alt="">
+                                <img class="lazy" src="../../media/spareparts/thumbnail/boxside.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">The Box</div>
                                     <p class="img-desc">
@@ -493,7 +595,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/spareparts/playerdials.jpg', '_blank');">
-                                <img class="lazy" src="../../media/spareparts/playerdials.jpg" alt="">
+                                <img class="lazy" src="../../media/spareparts/thumbnail/playerdials.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Players</div>
                                     <p class="img-desc">
@@ -503,7 +605,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/spareparts/cards1.png', '_blank');">
-                                <img class="lazy" src="../../media/spareparts/cards1.png" alt="">
+                                <img class="lazy" src="../../media/spareparts/thumbnail/cards1.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Card Sheet 1</div>
                                     <p class="img-desc">
@@ -513,7 +615,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/spareparts/cards2.png', '_blank');">
-                                <img class="lazy" src="../../media/spareparts/cards2.png" alt="">
+                                <img class="lazy" src="../../media/spareparts/thumbnail/cards2.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Card Sheet 2</div>
                                     <p class="img-desc">
@@ -523,7 +625,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/spareparts/cards3.png', '_blank');">
-                                <img class="lazy" src="../../media/spareparts/cards3.png" alt="">
+                                <img class="lazy" src="../../media/spareparts/thumbnail/cards3.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Card Sheet 3</div>
                                     <p class="img-desc">
@@ -533,7 +635,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/spareparts/cards4.png', '_blank');">
-                                <img class="lazy" src="../../media/spareparts/cards4.png" alt="">
+                                <img class="lazy" src="../../media/spareparts/thumbnail/cards4.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Card Sheet 4</div>
                                     <p class="img-desc">
@@ -543,7 +645,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/spareparts/cards5.png', '_blank');">
-                                <img class="lazy" src="../../media/spareparts/cards5.png" alt="">
+                                <img class="lazy" src="../../media/spareparts/thumbnail/cards5.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Card Sheet 5</div>
                                     <p class="img-desc">
@@ -553,7 +655,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/spareparts/cards6.png', '_blank');">
-                                <img class="lazy" src="../../media/spareparts/cards6.png" alt="">
+                                <img class="lazy" src="../../media/spareparts/thumbnail/cards6.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Card Sheet 6</div>
                                     <p class="img-desc">
@@ -563,7 +665,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/spareparts/cards7.png', '_blank');">
-                                <img class="lazy" src="../../media/spareparts/cards7.png" alt="">
+                                <img class="lazy" src="../../media/spareparts/thumbnail/cards7.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Card Sheet 7</div>
                                     <p class="img-desc">
@@ -573,7 +675,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/spareparts/cards8.png', '_blank');">
-                                <img class="lazy" src="../../media/spareparts/cards8.png" alt="">
+                                <img class="lazy" src="../../media/spareparts/thumbnail/cards8.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Card Sheet 8</div>
                                     <p class="img-desc">
@@ -583,7 +685,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/spareparts/body.jpg', '_blank');">
-                                <img class="lazy" src="../../media/spareparts/body.jpg" alt="">
+                                <img class="lazy" src="../../media/spareparts/thumbnail/body.jpg" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Card Body</div>
                                     <p class="img-desc">
@@ -631,7 +733,7 @@
     
                         <section class="images">
                             <div class="img-container lazy" onclick="window.open('../media/eternalcrown/poster.png', '_blank');">
-                                <img class="lazy" src="../../media/eternalcrown/poster.png" alt="">
+                                <img class="lazy" src="../../media/eternalcrown/thumbnail/poster.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Poster</div>
                                     <p class="img-desc">
@@ -641,7 +743,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/eternalcrown/s1.png', '_blank');">
-                                <img class="lazy" src="../../media/eternalcrown/s1.png" alt="">
+                                <img class="lazy" src="../../media/eternalcrown/thumbnail/s1.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Intro 1</div>
                                     <p class="img-desc">
@@ -651,7 +753,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/eternalcrown/s2.png', '_blank');">
-                                <img class="lazy" src="../../media/eternalcrown/s2.png" alt="">
+                                <img class="lazy" src="../../media/eternalcrown/thumbnail/s2.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Intro 2</div>
                                     <p class="img-desc">
@@ -661,7 +763,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/eternalcrown/s3.png', '_blank');">
-                                <img class="lazy" src="../../media/eternalcrown/s3.png" alt="">
+                                <img class="lazy" src="../../media/eternalcrown/thumbnail/s3.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Game End</div>
                                     <p class="img-desc">
@@ -671,7 +773,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/eternalcrown/hero-sprite-sheet-export.png', '_blank');">
-                                <img class="lazy" src="../../media/eternalcrown/hero-sprite-sheet-export.png" alt="">
+                                <img class="lazy" src="../../media/eternalcrown/thumbnail/hero-sprite-sheet-export.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Overworld Sprites</div>
                                     <p class="img-desc">
@@ -681,7 +783,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/eternalcrown/fighting.gif', '_blank');">
-                                <img class="lazy" src="../../media/eternalcrown/fighting.gif" alt="">
+                                <img class="lazy" src="../../media/eternalcrown/thumbnail/fighting.gif" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Battle Scene</div>
                                     <p class="img-desc">
@@ -691,7 +793,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/eternalcrown/herofight-export.png', '_blank');">
-                                <img class="lazy" src="../../media/eternalcrown/herofight-export.png" alt="">
+                                <img class="lazy" src="../../media/eternalcrown/thumbnail/herofight-export.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Player Battle Sprites</div>
                                     <p class="img-desc">
@@ -701,7 +803,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/eternalcrown/skeletonfight.png', '_blank');">
-                                <img class="lazy" src="../../media/eternalcrown/skeletonfight.png" alt="">
+                                <img class="lazy" src="../../media/eternalcrown/thumbnail/skeletonfight.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Enemy Battle Sprites</div>
                                     <p class="img-desc">
@@ -741,7 +843,7 @@
     
                         <section class="images">
                             <div class="img-container lazy" onclick="window.open('../media/dinosaurgame/dino3.png', '_blank');">
-                                <img class="lazy" src="../../media/dinosaurgame/dino3.png" alt="">
+                                <img class="lazy" src="../../media/dinosaurgame/thumbnail/dino3.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Dinosaur Cowboy</div>
                                     <p class="img-desc">
@@ -751,7 +853,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/dinosaurgame/IRS.png', '_blank');">
-                                <img class="lazy" src="../../media/dinosaurgame/IRS.png" alt="">
+                                <img class="lazy" src="../../media/dinosaurgame/thumbnail/IRS.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">IRS</div>
                                     <p class="img-desc">
@@ -761,7 +863,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/dinosaurgame/dino1.png', '_blank');">
-                                <img class="lazy" src="../../media/dinosaurgame/dino1.png" alt="">
+                                <img class="lazy" src="../../media/dinosaurgame/thumbnail/dino1.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Dinosaur Cowboy V1</div>
                                     <p class="img-desc">
@@ -771,7 +873,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/dinosaurgame/dino2.png', '_blank');">
-                                <img class="lazy" src="../../media/dinosaurgame/dino2.png" alt="">
+                                <img class="lazy" src="../../media/dinosaurgame/thumbnail/dino2.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">Dinosaur Cowboy V2</div>
                                     <p class="img-desc">
@@ -816,7 +918,7 @@
                         
                         <section class="images">
                             <div class="img-container lazy" onclick="window.open('../media/goosegame/goosegoose.png', '_blank');">
-                                <img class="lazy" src="../../media/goosegame/goosegoose.png" alt="">
+                                <img class="lazy" src="../../media/goosegame/thumbnail/goosegoose.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">GooseGoose</div>
                                     <p class="img-desc">
@@ -826,7 +928,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/goosegame/duckduck.png', '_blank');">
-                                <img class="lazy" src="../../media/goosegame/duckduck.png" alt="">
+                                <img class="lazy" src="../../media/goosegame/thumbnail/duckduck.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">DuckDuck</div>
                                     <p class="img-desc">
@@ -836,7 +938,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/goosegame/foxfox.png', '_blank');">
-                                <img class="lazy" src="../../media/goosegame/foxfox.png" alt="">
+                                <img class="lazy" src="../../media/goosegame/thumbnail/foxfox.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">FoxFox</div>
                                     <p class="img-desc">
@@ -846,7 +948,7 @@
                             </div>
                             
                             <div class="img-container lazy" onclick="window.open('../media/goosegame/deerdeer.png', '_blank');">
-                                <img class="lazy" src="../../media/goosegame/deerdeer.png" alt="">
+                                <img class="lazy" src="../../media/goosegame/thumbnail/deerdeer.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">DeerDeer</div>
                                     <p class="img-desc">
@@ -856,7 +958,7 @@
                             </div>
     
                             <div class="img-container lazy" onclick="window.open('../media/goosegame/breadbread.png', '_blank');">
-                                <img class="lazy" src="../../media/goosegame/breadbread.png" alt="">
+                                <img class="lazy" src="../../media/goosegame/thumbnail/breadbread.png" alt="">
                                 <div class="img-overlay">
                                     <div class="img-title">BreadBread</div>
                                     <p class="img-desc">
